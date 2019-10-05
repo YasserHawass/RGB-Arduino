@@ -2,10 +2,13 @@ import serial
 import time
 import tkinter as tk
 
+from tks.colors import ColorEntry, ColorDialog, ColorVar
+from tks.color_palette import PaletteSelector
+from tks.color_wheel import ColorWheel
 
 window = tk.Tk()
 window.configure(background="gray")
-window.geometry("330x80")
+window.geometry("830x880")
 window.title("Alarm GG")
 
 
@@ -52,12 +55,15 @@ def alarm():
 
     b4 = tk.Button(window, text="BYE", command=quit, bg="gold", fg="gray7", font=("Comic Sans MS", 15))
 
-
+    color_box = ColorDialog(window, "HEY")
 
     b1.grid(row=1, column=0, padx=5, pady=10)
     b2.grid(row=1, column=1, padx=5, pady=10)
     b3.grid(row=1, column=2, padx=5, pady=10)
     b4.grid(row=1, column=3, padx=5, pady=10)
+
+
+
 
     window.mainloop()
 
