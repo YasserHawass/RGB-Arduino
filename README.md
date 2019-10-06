@@ -20,3 +20,7 @@ PS: i used n-mosfets, 470 ohms resistors between arduino and transistors, and 12
 
 arduino code and cie file is inspired from rodrigogarces' repo
 https://github.com/rodrigogarces/Arduino-RGB-led-strip
+
+# Help!
+if you have any queries about my repo, and how to install it, please don't hesistate to email me @
+yasser.hawass@gmail.com
