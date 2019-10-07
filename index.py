@@ -41,7 +41,7 @@ def alarm():
     def wakeMe():       #it's buggy here
         while True:
             try:
-                print("Heavy task!")
+                # print("Heavy task!")
                 arduino.write(b'255.80.80')
                 time.sleep(1)
                 arduino.write(b'0.0.255')
@@ -50,6 +50,7 @@ def alarm():
                 time.sleep(1)
             except KeyboardInterrupt:
                 print("KeyboardInterrupt has been caught.")
+                label.config(bg="black")
                 break
             
     def set_alarm():
@@ -77,9 +78,11 @@ def alarm():
         if wake == current_time[:-3]:
             label.config(bg="red")
             wakeMe()
+            wake = ''
         if int(time.time()) > wake_ :
             label.config(bg="yellow")
             wakeMe()
+            wake_ = 9999 * 60 * int(time.time())
         label.after(200, tick)
         
     # Funcs Buttons
