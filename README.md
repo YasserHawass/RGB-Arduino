@@ -15,6 +15,7 @@ PS: i used n-mosfets, 470 ohms resistors between arduino and transistors, and 12
 - improve the not so friendly GUI (Especially the color select)
 - improve documentation (Technical & Non technical sections)
 - fix wakeMe() bugs, if not deactivated from the CLI
+#do you need to start connection ?, maybe make connection each time ? #kinda no need for that
 
 # Mentions:
 
